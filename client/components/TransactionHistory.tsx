@@ -7,7 +7,7 @@ import ethLogo from '../assets/ethCurrency.png'
 import { FiArrowUpRight } from 'react-icons/fi'
 
 const style = {
-  wrapper: `h-full text-white select-none h-full w-screen flex-1 pt-14 flex items-end justify-end pb-12 overflow-scroll px-8`,
+  wrapper: `h-full text-white select-none h-full w-screen flex-1 pt-14 flex items-end justify-end pb-12 overflow-inherit px-8 bg-2d242f`,
   txHistoryItem: `bg-[#191a1e] rounded-lg px-4 py-2 my-2 flex items-center justify-end`,
   txDetails: `flex items-center`,
   toAddress: `text-[#f48706] mx-2`,
@@ -59,7 +59,7 @@ const TransactionHistory = () => {
               </div>
               <div className={style.etherscanLink}>
                 <a
-                  href={`https://rinkeby.etherscan.io/tx/${transaction.txHash}`}
+                  href={`https://goerli.etherscan.io/tx/${transaction.txHash}`}
                   target='_blank'
                   rel='noreferrer'
                   className={style.etherscanLink}
