@@ -4,7 +4,7 @@ import { FiArrowUpRight } from 'react-icons/fi'
 import { AiOutlineDown } from 'react-icons/ai'
 import { HiOutlineDotsVertical } from 'react-icons/hi'
 import ethLogo from '../assets/eth.png'
-import uniswapLogo from '../assets/uniswap.png'
+import vordlogo from '../assets/vordium.png'
 import { useContext } from 'react'
 import { TransactionContext } from '../context/TransactionContext'
 import { client } from '../lib/sanityClient'
@@ -53,7 +53,7 @@ const Header = () => {
   return (
     <div className={style.wrapper}>
       <div className={style.headerLogo}>
-        <Image src={uniswapLogo} alt='uniswap' height={40} width={40} />
+        <Image src={vordlogo} alt='vordium' height={40} width={40} />
       </div>
       <div className={style.nav}>
         <div className={style.navItemsContainer}>
